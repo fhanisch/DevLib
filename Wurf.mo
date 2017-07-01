@@ -1,7 +1,7 @@
 within DevLib;
 
 model Wurf
-  parameter Real g = 9.81;
+  constant Real g = 9.81;
   parameter Real v_0 = 30;
   Real x, y;
   Real v_x(start = v_0 * cos(3.14159 / 4));
@@ -17,13 +17,15 @@ equation
     <title>Wurf</title>
     <meta charset=\"utf-8\">
     <script type=\"text/x-mathjax-config\">
-      MathJax.Hub.Config({ TeX: { equationNumbers: {autoNumber: \"AMS\"} } });
+      MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}
+});
     </script>
     <script type=\"text/javascript\" async
       src=\"https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML\">
     </script>
     <style>
-      main {
+      main,table {
         font-family: arial;
         font-weight: bold;
         font-size: 20px;
@@ -37,7 +39,7 @@ equation
       border-top: 2px solid #999999;
       border-bottom: 2px solid #999999;
       }
-      h2 {
+      #h2 {
       font-weight: bold;
       font-size: 25px;
       color: #ffffff;
@@ -59,7 +61,31 @@ equation
       <h1>Schräger Wurf</h1>
     </header>
     <main>
-      <h2>Gleichungen</h2>
+      <h2 ID=\"h2\">Parameter</h2>
+      <table>
+        <tr>
+          <td ID=\"formel\">$g = 9.81 \\frac{m}{s^2}$</td> <td>...Fallbeschleunigung</td>        
+        </tr>
+        <tr>
+          <td ID=\"formel\">$v_0$</td> <td>...Startgeschwindigkeit</td>
+        </tr>
+      </table>
+      <h2 ID=\"h2\">Zustandsgrößen</h2>
+      <table>
+        <tr>
+          <td ID=\"formel\">$x$</td> <td>...Ortskoordinate in x-Richtung</td>        
+        </tr>
+        <tr>
+          <td ID=\"formel\">$y$</td> <td>...Ortskoordinate in y-Richtung</td>
+        </tr>
+        <tr>
+          <td ID=\"formel\">$v_x$</td> <td>...Geschwindigkeit in x-Richtung</td>        
+        </tr>
+        <tr>
+          <td ID=\"formel\">$v_y$</td> <td>...Geschwindigkeit in y-Richtung</td>
+        </tr>
+      </table>
+      <h2 ID=\"h2\">Gleichungen</h2>
       <p>Differentialgleichungssytem des schrägen Wurfs.</p>
       <p ID=\"formel\">
         $$\dot{v}_x = 0$$
