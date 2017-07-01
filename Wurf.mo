@@ -61,37 +61,52 @@ equation
       <h1>Schräger Wurf</h1>
     </header>
     <main>
+      <h2 ID=\"h2\">Konstanten</h2>
+      <table>
+        <tr>
+          <td ID=\"formel\">$g = 9.81 \\frac{m}{s^2}$</td> <td>...Fallbeschleunigung</td>        
+        </tr>
+      </table>
       <h2 ID=\"h2\">Parameter</h2>
       <table>
         <tr>
-          <td ID=\"formel\">$g = 9.81 \\frac{m}{s^2}$</td> <td>...Fallbeschleunigung</td>        
-        </tr>
-        <tr>
-          <td ID=\"formel\">$v_0$</td> <td>...Startgeschwindigkeit</td>
+          <td ID=\"formel\">$v_0$</td>
+          <td ID=\"formel\">$[\\frac{m}{s}]$</td>
+          <td>...Startgeschwindigkeit</td>
         </tr>
       </table>
       <h2 ID=\"h2\">Zustandsgrößen</h2>
       <table>
         <tr>
-          <td ID=\"formel\">$x$</td> <td>...Ortskoordinate in x-Richtung</td>        
+          <td ID=\"formel\">$x$</td>
+          <td ID=\"formel\">$[m]$</td>
+          <td>...Ortskoordinate in x-Richtung</td>        
         </tr>
         <tr>
-          <td ID=\"formel\">$y$</td> <td>...Ortskoordinate in y-Richtung</td>
+          <td ID=\"formel\">$y$</td>
+          <td ID=\"formel\">$[m]$</td>
+          <td>...Ortskoordinate in y-Richtung</td>
         </tr>
         <tr>
-          <td ID=\"formel\">$v_x$</td> <td>...Geschwindigkeit in x-Richtung</td>        
+          <td ID=\"formel\">$v_x$</td>
+          <td ID=\"formel\">$[\\frac{m}{s}]$</td>
+          <td>...Geschwindigkeit in x-Richtung</td>        
         </tr>
         <tr>
-          <td ID=\"formel\">$v_y$</td> <td>...Geschwindigkeit in y-Richtung</td>
+          <td ID=\"formel\">$v_y$</td>
+          <td ID=\"formel\">$[\\frac{m}{s}]$</td>
+          <td>...Geschwindigkeit in y-Richtung</td>
         </tr>
       </table>
       <h2 ID=\"h2\">Gleichungen</h2>
       <p>Differentialgleichungssytem des schrägen Wurfs.</p>
       <p ID=\"formel\">
-        $$\dot{v}_x = 0$$
-        $$\dot{v}_y = -g$$
-        $$\dot{x} = v_x$$
-        $$\dot{y} = v_y$$
+        \\begin{equation}
+        \\dot{v}_x = 0 \\\
+        \\dot{v}_y = -g \\\
+        \\dot{x} = v_x \\\
+        \\dot{y} = v_y
+        \\end{equation}
       </p>
     </main>
   </body>
