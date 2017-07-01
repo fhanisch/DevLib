@@ -1,11 +1,14 @@
 within DevLib;
 
 model Wurf
-  constant Real g = 9.81;
-  parameter Real v_0 = 30;
-  Real x, y;
-  Real v_x(start = v_0 * cos(3.14159 / 4));
-  Real v_y(start = v_0 * sin(3.14159 / 4));
+  import DevLib.SIunits.*;
+  constant Real pi = 3.14159 "Kreizahl pi";
+  constant acc g = 9.81 "Fallbeschleunigung";
+  parameter vel v_0 = 30 "Startgeschwindigkeit";
+  dist x "Weg in x-Richtung";
+  dist y "Weg in y-Richtung";
+  vel v_x(start = v_0 * cos(pi / 4)) "Geschwindigkeit in x-Richtung";
+  vel v_y(start = v_0 * sin(pi / 4)) "Geschwindigkeit in y-Richtung";
 equation
   der(v_x) = 0;
   der(v_y) = -g;
@@ -80,12 +83,12 @@ equation
         <tr>
           <td ID=\"formel\">$x$</td>
           <td ID=\"formel\">$[m]$</td>
-          <td>...Ortskoordinate in x-Richtung</td>        
+          <td>...Weg in x-Richtung</td>        
         </tr>
         <tr>
           <td ID=\"formel\">$y$</td>
           <td ID=\"formel\">$[m]$</td>
-          <td>...Ortskoordinate in y-Richtung</td>
+          <td>...Weg in y-Richtung</td>
         </tr>
         <tr>
           <td ID=\"formel\">$v_x$</td>
