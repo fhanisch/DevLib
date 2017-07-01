@@ -1,0 +1,2 @@
+loadFile("PT1.mo");
+simulate(PT1,stopTime=10,stepSize=0.01);
