@@ -1,4 +1,5 @@
 ﻿within DevLib;
+
 model Wurf
   import DevLib.SIunits.*;
   constant Real pi = 3.14159 "Kreiszahl pi";
@@ -94,4 +95,3 @@ equation
 </html>"),
     experiment(StartTime = 0, StopTime = 5, Tolerance = 1e-06, Interval = 0.1));
 end Wurf;
-
