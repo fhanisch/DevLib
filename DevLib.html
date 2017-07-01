@@ -1,0 +1,125 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>DevLib.Wurf</title>
+<meta name="HTML-Generator" content="Dymola">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+*       { font-size: 100%; font-family: Arial, sans-serif; }
+.modelica, .modelica * { font-size: 90%; font-family: Courier, monospace; white-space: pre; } /* For the Modelica code (in exported html). */
+h4      { font-size: 100%; font-weight: bold; color: green; } 
+h3      { font-size: 110%; font-weight: bold; color: green; }
+h2      { font-size: 130%; font-weight: bold; color: green; }
+address { font-weight: normal; }
+td      { padding: 2px; border: 1px solid #808080; vertical-align: top; }
+th      { padding: 2px; border: 1px solid #808080; vertical-align: top; font-weight: bold; }
+table   { border: 1px solid #808080; border-collapse: collapse; }
+pre, code {font-family: "Courier New", monospace;}
+pre {white-space: pre; overflow-x : hidden;}
+.ModelicaDescription {font-weight: bold;} /* For the description string of the class. */
+.ModelicaBaseClass {} /* For the list of base-classes at the of the description. */
+.ModelicaKeyword { color: blue; font-weight: normal; font-style: normal; } /* Keywords in Modelica. */
+.ModelicaComment { color: #006400;  font-weight: normal; font-style: normal;} /* All three variants of comments in Modelica.  */
+.ModelicaString { color: #006400;  font-weight: normal; font-style: normal;} /* String constants. */
+.ModelicaClass { color: red; font-weight: normal; font-style: normal;} /* Formatting the names of referenced classes (for base-class and components). */
+.ModelicaFunction { color: red; font-weight: normal; font-style: normal;} /* Formatting for called functions. */
+.ModelicaTablePackageContent { } /* The table of contents for each package. */
+.ModelicaTableCrossReference { } /* The optional cross-reference table. */
+.ModelicaTableInputs {} /* The table of inputs for a function. */
+.ModelicaTableOutputs {} /* The table of outputs for a function. */
+.ModelicaTableParameters {} /* The table of parameters for a model/block. */
+.ModelicaTableConnectors {} /* The table of connectors for a model/block. */
+.ModelicaTableContents {} /* The table of contents for a connector. */
+.ModelicaStartAttribute { font-weight: bold; } /* The formatting used for start-attribute in the table of parameters, to separate them from parameter values. */
+.ModelicaParameterTab { background-color: #c0c0c0; font-weight: bold; } /* The tab-heading in the table of parameters */
+.ModelicaParameterGroup { background-color: #e0e0e0; } /* The group-heading in the table of parameters */
+</style>
+</head>
+<body>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE Wurf<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><a name="DevLib.Wurf"></a>DevLib.Wurf</h2>
+<h3>Information</h3>
+
+  <head>
+    <title>Wurf</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css"/>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}
+});
+    </script>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+
+  </head>
+
+  <body>
+    <header>
+      <h1>Schräger Wurf</h1>
+    </header>
+    <main>
+      <h2 ID="h2">Konstanten</h2>
+      <table>
+        <tr>
+          <td>$g = 9.81 \frac{m}{s^2}$</td>
+          <td>...Fallbeschleunigung</td>
+        </tr>
+      </table>
+      <h2 ID="h2">Parameter</h2>
+      <table>
+        <tr>
+          <td>$v_0$</td>
+          <td>$[\frac{m}{s}]$</td>
+          <td>...Startgeschwindigkeit</td>
+        </tr>
+        <tr>
+          <td>$\phi_0$</td>
+          <td>$[rad]$</td>
+          <td>...Startwinkel</td>
+        </tr>
+      </table>
+      <h2 ID="h2">Zustandsgrößen</h2>
+      <table>
+        <tr>
+          <td>$x$</td>
+          <td>$[m]$</td>
+          <td>...Weg in x-Richtung</td>
+        </tr>
+        <tr>
+          <td>$y$</td>
+          <td>$[m]$</td>
+          <td>...Weg in y-Richtung</td>
+        </tr>
+        <tr>
+          <td>$v_x$</td>
+          <td>$[\frac{m}{s}]$</td>
+          <td>...Geschwindigkeit in x-Richtung</td>
+        </tr>
+        <tr>
+          <td>$v_y$</td>
+          <td>$[\frac{m}{s}]$</td>
+          <td>...Geschwindigkeit in y-Richtung</td>
+        </tr>
+      </table>
+      <h2 ID="h2">Gleichungen</h2>
+      <p>Differentialgleichungssytem des schrägen Wurfs.</p>
+      <p ID="formel">
+        \begin{equation}
+        \dot{v}_x = 0 \\
+        \dot{v}_y = -g \\
+        \dot{x} = v_x \\
+        \dot{y} = v_y
+        \end{equation}
+      </p>
+    </main>
+  </body>
+
+<address>
+<a href="http://www.3ds.com/">Automatically generated</a> Sat Jul 01 21:30:41 2017.
+</address>
+</body>
+</html>
