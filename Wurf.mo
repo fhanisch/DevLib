@@ -2,7 +2,7 @@ within DevLib;
 
 model Wurf
   import DevLib.SIunits.*;
-  constant Real pi = 3.14159 "Kreizahl pi";
+  constant Real pi = 3.14159 "Kreiszahl pi";
   constant acc g = 9.81 "Fallbeschleunigung";
   parameter vel v_0 = 30 "Startgeschwindigkeit";
   dist x "Weg in x-Richtung";
