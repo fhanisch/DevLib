@@ -20,7 +20,6 @@ equation
   <head>
     <title>Wurf</title>
     <meta charset=\"utf-8\">
-    <link rel=\"stylesheet\" href=\"style.css\"/>
     <script type=\"text/x-mathjax-config\">
       MathJax.Hub.Config({
   tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
@@ -29,7 +28,39 @@ equation
     <script type=\"text/javascript\" async
       src=\"https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML\">
     </script>
-
+    <style>
+    body {
+    		font-family: arial;
+    		font-weight: bold;
+    		font-size: 20px;
+    		color: #2e8b57;
+    	}
+    h1 {
+      color: #ffffff;
+      background-color: #4169e1;
+    	text-align: center;
+    	font-size: 50px;
+    	border-top: 2px solid #999999;
+      border-bottom: 2px solid #999999;
+    }
+    #h2 {
+      font-weight: bold;
+    	color: #ffffff;
+      background-color: #00cd66;
+      padding: .2em .5em;
+      margin-top: 1.5em;
+      border-top: 2px solid #999999;
+      border-bottom: 2px solid #999999;
+    }
+    #formel {
+    	font-size: 22px;
+    	color: #303030;
+    }
+    td {
+    	border:1px solid white;
+    	vertical-align:middle;
+    }
+    </style>
   </head>
 
   <body>
