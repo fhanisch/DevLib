@@ -68,7 +68,7 @@ equation
           <p ID=\"formel\">$$p=mv$$</p>
           <p>Die Kraft ist gleich der zeitlichen Änderung des Impulses.</p>
           <p ID=\"formel\">$$F=\\frac{dp}{dt}$$</p>
-          <p ID=\"formel\">$$F=\\frac{dp}{dt} = m \\frac{dv}{dt} + v \\frac{dm}{dt}$$</p>
+          <p ID=\"formel\">$$F=\\frac{d(mv)}{dt} = m \\frac{dv}{dt} + v \\frac{dm}{dt}$$</p>
         </main>
       </body>
     </html>"),
