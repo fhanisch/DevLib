@@ -1,2 +1,3 @@
 # Modelica Test Library
-[Wurf.mo](https://fhanisch.github.io/Doc/DevLib.html)
+[Wurf](https://fhanisch.github.io/Doc/DevLib.html#DevLib.Wurf)
+[Rakete](https://fhanisch.github.io/Doc/DevLib.html#DevLib.Rakete)

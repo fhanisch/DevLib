@@ -3,13 +3,13 @@
 model Wurf
   import DevLib.SIunits.*;
   constant Real pi = 3.14159 "Kreiszahl pi";
-  constant acc g = 9.81 "Fallbeschleunigung";
-  parameter vel v_0 = 30 "Startgeschwindigkeit";
-  parameter angle phi_0 = pi/4 "Startwinkel";
-  dist x "Weg in x-Richtung";
-  dist y "Weg in y-Richtung";
-  vel v_x(start = v_0 * cos(phi_0)) "Geschwindigkeit in x-Richtung";
-  vel v_y(start = v_0 * sin(phi_0)) "Geschwindigkeit in y-Richtung";
+  constant Acc g = 9.81 "Fallbeschleunigung";
+  parameter Vel v_0 = 30 "Startgeschwindigkeit";
+  parameter Angle phi_0 = pi/4 "Startwinkel";
+  Dist x "Weg in x-Richtung";
+  Dist y "Weg in y-Richtung";
+  Vel v_x(start = v_0 * cos(phi_0)) "Geschwindigkeit in x-Richtung";
+  Vel v_y(start = v_0 * sin(phi_0)) "Geschwindigkeit in y-Richtung";
 equation
   der(v_x) = 0;
   der(v_y) = -g;
