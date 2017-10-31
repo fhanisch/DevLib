@@ -1,2 +1,3 @@
-loadFile("PT1.mo");
-buildModelFMU(PT1,version="2.0",fmuType="cs",platforms={"static"});
+loadFile("package.mo");
+cd("../work");
+buildModelFMU(DevLib.PT1,version="2.0",fmuType="cs",platforms={"static"});
