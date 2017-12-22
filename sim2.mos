@@ -1,0 +1,3 @@
+loadFile("package.mo");
+cd("../work");
+simulate(DevLib.Gravitation.SpaceStation,stopTime=5400,stepSize=0.1);
