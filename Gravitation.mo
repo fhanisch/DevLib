@@ -21,7 +21,7 @@ package Gravitation
       parameter Real G = 6.67408e-11;
       Real R;
     algorithm
-      R:=sqrt((r1[1]-r2[1])^2+(r1[2]-r2[2])^2+(r1[3]-r2[3])^2);
+      R:=sqrt((r2[1]-r1[1])^2+(r2[2]-r1[2])^2+(r2[3]-r1[3])^2);
       f:=G*m1*m2*(r2-r1)/R^3;
     end GravitationForce;
 
