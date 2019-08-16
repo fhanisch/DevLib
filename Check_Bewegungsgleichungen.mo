@@ -1,5 +1,6 @@
 ﻿model Check_Bewegungsgleichungen
   import Modelica.Constants.*;
+
   parameter Real m = 1750;
   parameter Real J = 1800;
   parameter Real l = 1.4;
@@ -40,7 +41,7 @@ equation
   v_x_2 = v_x_2_l*cos(phi)-v_y_2_l*sin(phi);
   v_y_2 = v_x_2_l*sin(phi)+v_y_2_l*cos(phi);
 
-  /* Ansatz 3 im Beschleunigten Bezugssystem oder über Nomal -und Tangentialbeschleunigung */
+  /* Ansatz 3 im Beschleunigten Bezugssystem oder über Normal -und Tangentialbeschleunigung */
   m*v3*(der(beta)+w) = f_x*sin(delta-beta);
   m*der(v3) = f_x*cos(delta-beta);
   v_x_3 = v3*cos(phi+beta);
